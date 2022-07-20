@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'vertexfonts';
+    src: url('fonts/go/vertexfonts.ttf?m8369i') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="vertex-"], [class*=" vertex-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'vertexfonts' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vertex-arrow-up:before {
+    content: "\e906";
+}
+.vertex-customer:before {
+    content: "\e905";
+}
+.vertex-tag:before {
+    content: "\e900";
+}
+.vertex-tags:before {
+    content: "\e901";
+}
+.vertex-thumbs-down:before {
+    content: "\e902";
+}
+.vertex-thumbs-up:before {
+    content: "\e903";
+}
+.vertex-ticket:before {
+    content: "\e904";
+}
+.vertex-trash:before {
+    content: "\e907";
+}
+.vertex-truck:before {
+    content: "\e909";
+}
+.vertex-user:before {
+    content: "\e911";
+}
+.vertex-zoom:before {
+    content: "\e918";
+}
+.vertex-zoom-out:before {
+    content: "\e919";
+}
+.vertex-added-truck:before {
+    content: "\e926";
+}
+.vertex-approved:before {
+    content: "\e92b";
+}
+.vertex-bag:before {
+    content: "\e92c";
+}
+.vertex-barcode:before {
+    content: "\e92e";
+}
+.vertex-basket:before {
+    content: "\e92f";
+}
+.vertex-box:before {
+    content: "\e932";
+}
+.vertex-cart:before {
+    content: "\e938";
+}
+.vertex-chat:before {
+    content: "\e93b";
+}
+.vertex-clock:before {
+    content: "\e93d";
+}
+.vertex-credit-card:before {
+    content: "\e94e";
+}
+.vertex-desktop:before {
+    content: "\e95a";
+}
+.vertex-hanger:before {
+    content: "\e96b";
+}
+.vertex-heart:before {
+    content: "\e96c";
+}
+.vertex-home:before {
+    content: "\e96d";
+}
+.vertex-link:before {
+    content: "\e975";
+}
+.vertex-location:before {
+    content: "\e977";
+}
+.vertex-lock:before {
+    content: "\e978";
+}
+.vertex-mail:before {
+    content: "\e979";
+}
+.vertex-menu:before {
+    content: "\e97b";
+}
+.vertex-phone:before {
+    content: "\e983";
+}
+.vertex-search:before {
+    content: "\e98c";
+}
+.vertex-shipped:before {
+    content: "\e98f";
+}
+.vertex-speech-bubble:before {
+    content: "\e991";
+}
+.vertex-ballon-chat:before {
+    content: "\e992";
+}
+.vertex-star:before {
+    content: "\e993";
+}
+.vertex-support:before {
+    content: "\e995";
+}

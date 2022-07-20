@@ -1,0 +1,97 @@
+<header class="header-mobile">
+
+    <div class="header-menu" data-toggle="overlay-shadow" data-target="#menu-mobile">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    {% element 'snippets/header-search' %}
+
+    <a class="cart-toggle" href="{{ links.cart }}" title="Carrinho">
+        <i class="icon icon-shopping-cart v-align-middle"></i>
+        <span class="cart-quantity" data-cart="amount"></span>
+    </a>
+
+</header>
+
+<header class="header">
+
+    <div class="bg">
+
+        <div class="line flex align-center justify-between container">
+
+            <div class="header-menu" data-toggle="overlay-shadow" data-target="#menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <a class="logo" href="{{ store.url }}" title="{{ store.name }}">
+
+                {% if settings.logo %}
+                    <img src="{{ themePath }}{{ settings.logo }}" alt="{{ store.name }}" width="222" height="36">
+                {% endif %}
+
+                {% if 'home' in pages.current %}
+                    <h1 class="title-store">{{ store.name }}</h1>
+                {% else %}
+                    <div class="title-store">{{ store.name }}</div>
+                {% endif %}
+
+            </a> 
+
+            {% element 'snippets/header-search' %}
+
+            <div class="help flex align-center">
+                <i class="icon vertex-support"></i>
+                <span>SAC</span>
+
+                <div class="help-dropdown">
+                    <div class="contato-dropdown">
+                        <i class="vertex-ballon-chat"></i>
+                        <span>Precisa de Ajuda?</span>
+                        <span>Atendimento por telefone</span>
+                        <a href="tel:{{ Translation('ag_telefone_1') }}"><span class="PhoneStore">{{ Translation('ag_telefone_1') }}</span></a>
+                        {% if(settings.whattsapp) %}
+                        <span class="WhatsappStore">{{settings.whattsapp}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="account flex align-center">
+
+                <i class="icon vertex-customer"></i>
+
+                <div class="tray-hide" data-logged-user="true">
+                    <span>Ol&aacute;, <span data-customer="name"></span></span>
+                    <div class="login-links">
+                        <a href="{{ links.central }}" title="Minha Conta">Minha conta</a>
+                        <span>/</span>
+                        <a href="{{ links.logout }}" title="Sair">Sair</a>
+                    </div>
+                </div>  
+                <div data-logged-user="false">
+
+                    <a href="{{ links.login }}" title="Entrar"><span>MINHA CONTA</span></a>
+
+                </div> 
+
+                
+
+            </div>
+
+            <a class="cart-toggle" href="{{ links.cart }}" title="Carrinho">
+
+                <i class="icon vertex-bag v-align-middle"></i>
+                <span class="cart-quantity" data-cart="amount">0</span>
+            </a>
+
+        </div>
+    </div>
+
+    {% element 'snippets/menu' %}
+
+</header>
